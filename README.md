@@ -136,21 +136,15 @@ The trained model was evaluated using multiple regression metrics.
 
 ### Actual vs Predicted Values
 
-> Replace with the generated image after pushing.
-
-```markdown
-![Actual vs Predicted](outputs/actual_vs_predicted.png)
-```
+<img width="852" height="677" alt="Screenshot 2026-06-26 225725" src="https://github.com/user-attachments/assets/af6f82cb-4c04-42fb-b2ec-d2b7fce1ca3b" />
 
 ---
 
 ### Residual Plot
 
-> Replace with the generated image after pushing.
 
-```markdown
-![Residual Plot](outputs/residual_plot.png)
-```
+<img width="872" height="677" alt="Screenshot 2026-06-26 225753" src="https://github.com/user-attachments/assets/2de1d43a-3bec-4227-ab95-45cc33fd8f1e" />
+
 
 ---
 
