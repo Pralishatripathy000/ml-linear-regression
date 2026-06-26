@@ -1,30 +1,104 @@
 # 📈 ML Linear Regression
 
-A beginner-friendly yet production-oriented implementation of **Linear Regression**, demonstrating the complete machine learning workflow—from data exploration and preprocessing to model training, evaluation, and interpretation.
-
-This project is part of my **ML Fundamentals** series, where each repository focuses on understanding a core machine learning algorithm through theory, implementation, visualizations, and practical insights.
+> **An end-to-end implementation of Linear Regression using the California Housing dataset, covering exploratory data analysis, model training, evaluation, visualization, and interpretation.**
 
 ---
 
-## 🚀 Project Overview
+## 📖 Overview
 
-Linear Regression is one of the most fundamental supervised learning algorithms used for predicting continuous numerical values. This project explores how linear relationships between variables can be modeled, evaluated, and interpreted using Python and Scikit-learn.
+Linear Regression is one of the most fundamental supervised machine learning algorithms used for predicting continuous numerical values. It models the relationship between independent variables and a target variable by fitting the best possible linear equation that minimizes prediction error.
 
-Rather than simply training a model, this repository emphasizes understanding the complete machine learning pipeline and the assumptions behind Linear Regression.
+This project demonstrates the complete machine learning workflow, beginning with data exploration and preprocessing, followed by model training, evaluation, regression diagnostics, and interpretation of feature importance.
+
+This repository is part of my **ML Fundamentals** series, where each project focuses on understanding a core machine learning algorithm through theory, implementation, and practical experimentation.
 
 ---
 
-## 📂 Project Structure
+## 📊 Dataset
 
+This project uses the **California Housing Dataset**, a well-known regression dataset provided by **Scikit-learn**.
+
+The dataset contains demographic, geographical, and housing information collected from districts across California. Each record represents one district, while the target variable corresponds to the **median house value** for that district.
+
+### Dataset Summary
+
+| Property       |                              Value |
+| -------------- | ---------------------------------: |
+| Samples        |                             20,640 |
+| Features       |                                  8 |
+| Target         | Median House Value (`MedHouseVal`) |
+| Missing Values |                               None |
+| Problem Type   |                         Regression |
+
+### Features
+
+| Feature        | Description                              |
+| -------------- | ---------------------------------------- |
+| **MedInc**     | Median income of households              |
+| **HouseAge**   | Median age of houses                     |
+| **AveRooms**   | Average number of rooms per household    |
+| **AveBedrms**  | Average number of bedrooms per household |
+| **Population** | Population of the district               |
+| **AveOccup**   | Average household occupancy              |
+| **Latitude**   | Geographic latitude                      |
+| **Longitude**  | Geographic longitude                     |
+
+---
+
+## 🚀 Project Workflow
+
+```text
+Dataset
+    │
+    ▼
+Data Exploration
+    │
+    ▼
+Exploratory Data Analysis
+    │
+    ▼
+Data Preprocessing
+    │
+    ▼
+Train-Test Split
+    │
+    ▼
+Linear Regression Model
+    │
+    ▼
+Prediction
+    │
+    ▼
+Model Evaluation
+    │
+    ▼
+Residual Analysis
+    │
+    ▼
+Feature Interpretation
 ```
-ml-linear-regression/
+
+---
+
+## 📂 Repository Structure
+
+```text
+ml-linear-regression
 │
 ├── data/
 ├── models/
+│   └── linear_regression.pkl
+│
 ├── outputs/
+│   ├── actual_vs_predicted.png
+│   ├── residual_plot.png
+│   ├── metrics.csv
+│   └── coefficients.csv
+│
 ├── src/
 │   ├── train.py
 │   └── predict.py
+│
 ├── notebook.ipynb
 ├── requirements.txt
 └── README.md
@@ -38,79 +112,77 @@ ml-linear-regression/
 * Pandas
 * NumPy
 * Matplotlib
+* Seaborn
 * Scikit-learn
 * Joblib
 * Jupyter Notebook
 
 ---
 
-## 📊 Workflow
+## 📈 Model Evaluation
 
-* Dataset Loading
+The trained model was evaluated using multiple regression metrics.
+
+| Metric                         |      Score |
+| ------------------------------ | ---------: |
+| Mean Absolute Error (MAE)      | **0.5332** |
+| Mean Squared Error (MSE)       | **0.5559** |
+| Root Mean Squared Error (RMSE) | **0.7456** |
+| R² Score                       | **0.5758** |
+
+---
+
+## 📊 Visualizations
+
+### Actual vs Predicted Values
+
+> Replace with the generated image after pushing.
+
+```markdown
+![Actual vs Predicted](outputs/actual_vs_predicted.png)
+```
+
+---
+
+### Residual Plot
+
+> Replace with the generated image after pushing.
+
+```markdown
+![Residual Plot](outputs/residual_plot.png)
+```
+
+---
+
+## 🔍 Key Insights
+
+* The California Housing dataset contains clean numerical data without missing values.
+* Median Income (`MedInc`) is the strongest predictor of house values.
+* Geographic location also plays a significant role in determining housing prices.
+* The model captures the overall trend of the data while maintaining reasonable prediction accuracy.
+* Residual analysis indicates that most prediction errors are randomly distributed around zero.
+
+---
+
+## 📚 Learning Outcomes
+
+Through this project, I explored:
+
+* The complete regression workflow
 * Exploratory Data Analysis (EDA)
-* Data Preprocessing
-* Feature Selection
-* Model Training
-* Model Evaluation
-* Regression Diagnostics
-* Model Serialization
-
----
-
-## 📈 Evaluation Metrics
-
-The model will be evaluated using:
-
-* Mean Absolute Error (MAE)
-* Mean Squared Error (MSE)
-* Root Mean Squared Error (RMSE)
-* R² Score
-
----
-
-## 📌 Visualizations
-
-This project includes:
-
-* Correlation Heatmap
-* Feature Distribution
-* Actual vs Predicted Values
-* Residual Plot
-* Feature Coefficient Analysis
-
----
-
-## 📖 Learning Outcomes
-
-By completing this project, I aim to understand:
-
-* How Linear Regression works mathematically
-* Assumptions of Linear Regression
 * Feature-target relationships
-* Model evaluation and interpretation
-* Regression diagnostics
-* Practical implementation using Scikit-learn
+* Training a Linear Regression model
+* Model evaluation using regression metrics
+* Residual analysis
+* Feature coefficient interpretation
+* Model serialization using Joblib
 
 ---
 
-## 🚧 Future Improvements
+## 🤝 Acknowledgements
 
-* Polynomial Regression
-* Ridge Regression
-* Lasso Regression
-* ElasticNet
-* Cross Validation
-* Hyperparameter Tuning
-
----
-
-## 📚 ML Fundamentals Series
-
-This repository is part of an ongoing series covering core Machine Learning algorithms from fundamentals to advanced concepts, with a focus on implementation, experimentation, and practical understanding.
-
----
-
-### ⭐ If you find this repository helpful, feel free to star it!
+* California Housing Dataset provided by **Scikit-learn**
+* Built as part of my **ML Fundamentals** repository series.
 
 
 
