@@ -1,3 +1,6 @@
+<img width="1536" height="1024" alt="ChatGPT Image Jun 28, 2026, 11_59_35 PM" src="https://github.com/user-attachments/assets/cab24edd-89cc-4020-a4f8-390716966f65" />
+
+
 # 📈 ML Linear Regression
 
 > **An end-to-end implementation of Linear Regression using the California Housing dataset, covering exploratory data analysis, model training, evaluation, visualization, and interpretation.**
